@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic-tags</title>
+    <style>
+        body{
+            margin: 0%;
+            
+            
+        }
+        .nikhilstore{
+            display: grid;
+            grid-area: "header" "nav" "main" "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: 10vh 5vh 80vh 5vh ;
+        }
+        header{
+            background-color: rgb(55, 0, 255);
+            font-size: 25px;
+        }
+        main{
+            background-color: white;
+        }
+        footer{
+            background-color: rgb(92, 48, 197);
+            font-size: 10px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .navbar{
+            background-color:yellowgreen;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #id1{
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            background-color: black;
+            padding: 5px;
+            border-radius:20px;
+            border:  1px solid white;
+            
+        }
+        a:hover{
+            border:2px solid red;
+        }
+        #id1:hover{
+            border:2px solid red;
+        }
+        
+        aside{
+            width: 15rem;
+            height: 100%;
+            background-color: green;
+            /* float: right; */
+            
+        }
+        
+        a{
+            display: block;
+            text-decoration: none;
+            color: red;
+            background-color: blue;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 20px;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="nikhilstore">
+        <header class="row">Aldres Groceries</header>
+        <nav class="navbar row">
+            <a href="#" id="id1">Grocery</a>
+            <a href="#" id="id1">Mobile</a>
+            <a href="#" id="id1">Laptops</a>
+            <a href="#" id="id1">Dresses</a>
+            <a href="#" id="id1">Beauty</a>
+        </nav>
+        
+        <main class="">
+            <aside >
+                <img src="" alt="">
+                <a href="#">Essentials</a>
+                <a href="#">Clothes</a>
+                <a href="#">Soaps</a>
+                <a href="#">Brushes</a>
+                <a href="#">Footwear</a>
+            </aside>
+            
+        </main>
+        <footer class="row">copyright@aldares</footer>
+       
+    </section>
+</body>
+</html>
